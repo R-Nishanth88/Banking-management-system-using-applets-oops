@@ -1,3 +1,60 @@
-# Banking-management-system-using-applets-oops
+# 🏦 Banking System – Java Console Application
 
- This Java code creates a basic financial system with a graphical user interface (GUI). Users can create two different kinds of accounts using it: current and savings accounts. Users can create an account, use their usernames and passwords to log in, and carry out standard operations including fund transfers between accounts, withdrawals, deposits, and balance checks. However, the system does not have persistent data storage; instead, account information is stored in arrays, which are destroyed when a programme terminates. Security elements and account number generation are also streamlined. Using Java's Swing framework for GUI interaction, the code illustrates fundamental banking functions; however, it requires enhancements for practical use..    
+This is a basic Java-based console application simulating a simple banking system. It supports creating and managing different types of bank accounts such as **Savings** and **Current** accounts. The application allows for operations like deposit, withdrawal, checking balance, and displaying account details.
+
+## 📁 Features
+
+- Object-Oriented Programming using:
+  - Interfaces (`Accountable`)
+  - Abstract classes (`Account`)
+  - Inheritance and method overriding (`SavingsAccount`, `CurrentAccount`)
+- Operations supported:
+  - Deposit money
+  - Withdraw money (with limits for savings accounts)
+  - Display account details
+  - Check current balance
+- User input handled via `Scanner`
+- Encapsulation of account details
+- Simple command-line interface
+
+## 📂 Project Structure
+
+```
+BankingSystem.java
+```
+
+## 🚀 How to Run
+
+1. **Compile the program**:
+   ```bash
+   javac BankingSystem.java
+   ```
+
+2. **Run the program**:
+   ```bash
+   java BankingSystem
+   ```
+
+## 🛠 Technologies Used
+
+- Java (JDK 8+)
+- Java I/O and Scanner
+- OOP Concepts: Interface, Inheritance, Abstract classes
+
+## 🧠 Key Concepts Demonstrated
+
+- Use of **interfaces** to define contracts for account operations.
+- **Abstract classes** to share common structure and behavior.
+- Subclass specialization for **Savings** and **Current** accounts.
+- Input validation and business logic (e.g., withdrawal limits).
+- **Encapsulation** and method overriding.
+
+## 📌 Notes
+
+- Savings account enforces a withdrawal limit.
+- No persistent storage (data is stored in memory for runtime only).
+- Intended for educational/demonstration purposes.
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
